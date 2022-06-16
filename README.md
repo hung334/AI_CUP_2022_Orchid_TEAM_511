@@ -65,6 +65,10 @@ pip install timm==0.6.2.dev0
 ``` {.python}
 %cd pytorch-image-models
 ```
+
+**模型訓練的權重皆存放在**
+**(./AI_CUP_2022_Orchid_TEAM_511/pytorch-image-models/output)**
+
 **5-2 訓練 swin large**
 
 --experiment 儲存訓練實驗的檔案夾名稱
