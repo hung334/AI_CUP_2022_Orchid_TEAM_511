@@ -115,3 +115,6 @@ swinv2_base_window12to24_192to384_22kft1k --pretrained --num-classes
 --drop-path 0.1 -j 4 --save-images --output output --experiment
 0603_0131_swinv2_base_window12to24_192to384_22kft1k_complement_final_bacbbone_new
 --mixup-off-epoch 300`
+
+**指定單張GPU**
+`CUDA_VISIBLE_DEVICES=1 bash ./distributed_train.sh 1`
