@@ -126,5 +126,7 @@ swinv2_base_window12to24_192to384_22kft1k --pretrained --num-classes
 
 *備註*
 
-`from timm.data.parsers.parser_image_folder import find_images_and_targets
-samples, class_to_idx=find_images_and_targets(folder='./',class_to_idx=None)`
+```
+from timm.data.parsers.parser_image_folder import find_images_and_targets
+samples, class_to_idx=find_images_and_targets(folder='./',class_to_idx=None)
+```
