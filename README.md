@@ -117,8 +117,11 @@ swinv2_base_window12to24_192to384_22kft1k --pretrained --num-classes
 --mixup-off-epoch 300`
 
 **指定單張GPU**
+
 `CUDA_VISIBLE_DEVICES=1 bash ./distributed_train.sh 1`
 
 **指定多張特定GPU**
+
 如:有3張時，只用其中的0，2
+
 `CUDA_VISIBLE_DEVICES=0,2 bash ./distributed_train.sh 3`
