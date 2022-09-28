@@ -116,11 +116,15 @@ swinv2_base_window12to24_192to384_22kft1k --pretrained --num-classes
 0603_0131_swinv2_base_window12to24_192to384_22kft1k_complement_final_bacbbone_new
 --mixup-off-epoch 300`
 
-**指定單張GPU**
+**備註-指定單張GPU**
 
 `CUDA_VISIBLE_DEVICES=1 bash ./distributed_train.sh 1`
 
-**指定多張特定GPU**
+**備註-指定多張特定GPU**
 
-如:有3張時，只用其中的0，2
-`CUDA_VISIBLE_DEVICES=0,2 bash ./distributed_train.sh 3`
+`CUDA_VISIBLE_DEVICES=0,2 bash ./distributed_train.sh 2`
+
+*備註*
+
+`from timm.data.parsers.parser_image_folder import find_images_and_targets
+samples, class_to_idx=find_images_and_targets(folder='./',class_to_idx=None)`
