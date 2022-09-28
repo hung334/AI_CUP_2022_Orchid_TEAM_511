@@ -120,13 +120,9 @@ swinv2_base_window12to24_192to384_22kft1k --pretrained --num-classes
 
 `CUDA_VISIBLE_DEVICES=1 bash ./distributed_train.sh 1`
 
-**備註-指定多張特定GPU**
+**備註-呼叫標籤引數**
 
-`CUDA_VISIBLE_DEVICES=0,2 bash ./distributed_train.sh 2`
-
-*備註*
-
-```
+```python
 from timm.data.parsers.parser_image_folder import find_images_and_targets
 samples, class_to_idx=find_images_and_targets(folder='./',class_to_idx=None)
 ```
